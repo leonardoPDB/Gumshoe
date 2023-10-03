@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Carregar os valores dos inputs do localStorage
+        document.querySelectorAll("input").forEach(function (input) {
+          const value = localStorage.getItem(input.id);
+          if (value) {
+            input.value = value;
+          }
+
+          input.addEventListener("input", function () {
+            // Salvar o valor no localStorage
+            localStorage.setItem(input.id, input.value);
+          });
+        });
+      });
+    </script>
+    <title>GUMSHOE - FICHA</title>
+  </head>
+  <body>
+    <h1>Ficha de Personagem - The Esoterrorists</h1>
+    <form class="container">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" /><br /><br />
+
+      <label for="profissao">Profissão</label>
+      <input type="text" id="profissao" name="profissao" /><br /><br />
+
+      <!-- Academicas -->
+      <div class="academicas">
+        <h3>Academicas</h3>
+        <label for="antropologia">Antropologia </label>
+        <input type="text" id="antropologia" name="antropologia" /><br /><br />
+        <label for="arqueologia">Arqueologia </label>
+        <input type="text" id="arqueologia" name="arqueologia" /><br /><br />
+        <label for="arquitetura">Arquitetura </label>
+        <input type="text" id="arquitetura" name="arquitetura" /><br /><br />
+        <label for="historia_arte">História da Arte </label>
+        <input
+          type="text"
+          id="historia_arte"
+          name="historia_arte"
+        /><br /><br />
+        <label for="contabilidade_forense">Contabilidade Forense </label>
+        <input
+          type="text"
+          id="contabilidade_forense"
+          name="contabilidade_forense"
+        /><br /><br />
+        <label for="psicologia_forense">Psicologia Forense </label>
+        <input
+          type="text"
+          id="psicologia_forense"
+          name="psicologia_forense"
+        /><br /><br />
+        <label for="historia">História </label>
+        <input type="text" id="historia" name="historia" /><br /><br />
+        <label for="lei">Lei </label>
+        <input type="text" id="lei" name="lei" /><br /><br />
+        <label for="historia_natural">História Natural </label>
+        <input
+          type="text"
+          id="historia_natural"
+          name="historia_natural"
+        /><br /><br />
+        <label for="estudos_oculto">Estudos do Oculto </label>
+        <input
+          type="text"
+          id="estudos_oculto"
+          name="estudos_oculto"
+        /><br /><br />
+        <label for="pesquisa">Pesquisa </label>
+        <input type="text" id="pesquisa" name="pesquisa" /><br /><br />
+        <label for="analise_textual">Análise Textual </label>
+        <input
+          type="text"
+          id="analise_textual"
+          name="analise_textual"
+        /><br /><br />
+        <label for="trivia">Trivia </label>
+        <input type="text" id="trivia" name="trivia" /><br /><br />
+      </div>
+
+      <!-- Interpessoais -->
+      <div class="interpessoais">
+        <h3>Interpessoais</h3>
+        <label for="detectar_besteiras">Detectar Besteiras </label>
+        <input
+          type="text"
+          id="detectar_besteiras"
+          name="detectar_besteiras"
+        /><br /><br />
+        <label for="burocracia">Burocracia </label>
+        <input type="text" id="burocracia" name="burocracia" /><br /><br />
+        <label for="conversa_policial">Conversa de Policial </label>
+        <input
+          type="text"
+          id="conversa_policial"
+          name="conversa_policial"
+        /><br /><br />
+        <label for="lisonjear">Lisonjear </label>
+        <input type="text" id="lisonjear" name="lisonjear" /><br /><br />
+        <label for="flertar">Flertar </label>
+        <input type="text" id="flertar" name="flertar" /><br /><br />
+        <label for="impersonar">Impersonar </label>
+        <input type="text" id="impersonar" name="impersonar" /><br /><br />
+        <label for="interrogacao">Interrogação </label>
+        <input type="text" id="interrogacao" name="interrogacao" /><br /><br />
+        <label for="intimidacao">Intimidação </label>
+        <input type="text" id="intimidacao" name="intimidacao" /><br /><br />
+        <label for="negociacao">Negociação </label>
+        <input type="text" id="negociacao" name="negociacao" /><br /><br />
+        <label for="resseguro">Resseguro </label>
+        <input type="text" id="resseguro" name="resseguro" /><br /><br />
+        <label for="malandragem">Malandragem </label>
+        <input type="text" id="malandragem" name="malandragem" /><br /><br />
+      </div>
+
+      <!-- Técnicas -->
+      <div class="tecnicas">
+        <h3>Técnicas</h3>
+        <label for="astronomia">Astronomia </label>
+        <input type="text" id="astronomia" name="astronomia" /><br /><br />
+        <label for="balistica">Balística </label>
+        <input type="text" id="balistica" name="balistica" /><br /><br />
+        <label for="quimica">Química </label>
+        <input type="text" id="quimica" name="quimica" /><br /><br />
+        <label for="criptografia">Criptografia </label>
+        <input type="text" id="criptografia" name="criptografia" /><br /><br />
+        <label for="recuperacao_dados">Recuperação de Dados </label>
+        <input
+          type="text"
+          id="recuperacao_dados"
+          name="recuperacao_dados"
+        /><br /><br />
+        <label for="analise_documentos">Análise de Documentos </label>
+        <input
+          type="text"
+          id="analise_documentos"
+          name="analise_documentos"
+        /><br /><br />
+        <label for="vigilancia_eletronica">Vigilância Eletrônica </label>
+        <input
+          type="text"
+          id="vigilancia_eletronica"
+          name="vigilancia_eletronica"
+        /><br /><br />
+        <label for="entomologia_forense">Entomologia Forense </label>
+        <input
+          type="text"
+          id="entomologia_forense"
+          name="entomologia_forense"
+        /><br /><br />
+        <label for="coleta_evidencias">Coleta de Evidências </label>
+        <input
+          type="text"
+          id="coleta_evidencias"
+          name="coleta_evidencias"
+        /><br /><br />
+        <label for="dispositivos_explosivos">Dispositivos Explosivos </label>
+        <input
+          type="text"
+          id="dispositivos_explosivos"
+          name="dispositivos_explosivos"
+        /><br /><br />
+        <label for="antropologia_forense">Antropologia Forense </label>
+        <input
+          type="text"
+          id="antropologia_forense"
+          name="antropologia_forense"
+        /><br /><br />
+        <label for="impressao_digital">Impressão Digital </label>
+        <input
+          type="text"
+          id="impressao_digital"
+          name="impressao_digital"
+        /><br /><br />
+        <label for="fotografia">Fotografia </label>
+        <input type="text" id="fotografia" name="fotografia" /><br /><br />
+      </div>
+
+      <!-- Gerais -->
+      <div class="gerais">
+        <h3>Gerais</h3>
+        <label for="atletismo">Atletismo </label>
+        <input type="text" id="atletismo" name="atletismo" /><br /><br />
+        <label for="direcao">Direção </label>
+        <input type="text" id="direcao" name="direcao" /><br /><br />
+        <label for="maos_leves">Mãos Leves </label>
+        <input type="text" id="maos_leves" name="maos_leves" /><br /><br />
+        <label for="vida">Vida </label>
+        <input type="text" id="vida" name="vida" /><br /><br />
+        <label for="infiltracao">Infiltração </label>
+        <input type="text" id="infiltracao" name="infiltracao" /><br /><br />
+        <label for="mecanica">Mecânica </label>
+        <input type="text" id="mecanica" name="mecanica" /><br /><br />
+        <label for="preparacao">Preparação </label>
+        <input type="text" id="preparacao" name="preparacao" /><br /><br />
+        <label for="brigar">Brigar </label>
+        <input type="text" id="brigar" name="brigar" /><br /><br />
+        <label for="atirar">Atirar </label>
+        <input type="text" id="atirar" name="atirar" /><br /><br />
+        <label for="acalmar">Acalmar </label>
+        <input type="text" id="acalmar" name="acalmar" /><br /><br />
+        <label for="estabilidade">Estabilidade </label>
+        <input type="text" id="estabilidade" name="estabilidade" /><br /><br />
+        <label for="vigilancia">Vigilância </label>
+        <input type="text" id="vigilancia" name="vigilancia" /><br /><br />
+      </div>
+    </form>
+  </body>
+</html>

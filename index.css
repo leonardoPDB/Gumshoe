@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #ddd;
+  margin: 0;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+}
+
+form {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label,
+h2,
+h3 {
+  font-weight: bold;
+  color: #fff;
+}
+
+input,
+textarea {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #444;
+}
+
+input[type="submit"] {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #ddd;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container > div {
+  flex: 1;
+  width: calc(25% - 20px);
+  margin: 10px;
+  padding: 20px;
+  background-color: #444;
+  border: 1px solid #666;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.academicas,
+.interpessoais,
+.tecnicas,
+.gerais {
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.academicas,
+.interpessoais,
+.tecnicas,
+.gerais h3 {
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > div {
+  width: 100%;
+  margin: 10px 0;
+  box-sizing: border-box;
+}
